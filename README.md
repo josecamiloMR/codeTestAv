@@ -1,26 +1,23 @@
-# Read Me First
-The following was discovered as part of building this project:
+# code test
 
-* The original package name 'com.example.rest-service' is invalid and this project uses 'com.example.restservice' instead.
+Using the following JSON feed:
 
-# Getting Started
+http://jsonplaceholder.typicode.com/posts
 
-### Reference Documentation
-For further reference, please consider the following sections:
+Create REST endpoints that reads the above JSON feed using HTTP. The service should perform the following tasks: 
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.4.5/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.4.5/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#boot-features-developing-web-applications)
-* [Rest Repositories](https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#howto-use-exposing-spring-data-repositories-rest-endpoint)
+## Count endpoint :
+Tally the number of unique user Ids in the JSON and return in a JSON response.
 
-### Guides
-The following guides illustrate how to use some features concretely:
+## Updated User List endpoint :
+ Modify the 4th JSON array item, changing the title and body of the object to “1800Flowers”. Return the modified JSON object to the controller class from the service then in the endpoint JSON response.
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-* [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
-* [Accessing Neo4j Data with REST](https://spring.io/guides/gs/accessing-neo4j-data-rest/)
-* [Accessing MongoDB Data with REST](https://spring.io/guides/gs/accessing-mongodb-data-rest/)
+Unit tests Should be runnable via “mvn test” Should be written to test all aspects of the application (include mock of the feed).
 
+##Requirements 
+- Use Java 1.8+ 
+- Use Spring Boot 
+- Use Maven 
+- Use JUnit and Mockito 
+
+All dependencies should be publicly available or properly included with the project and referenced within the POM Be creative, have fun and may the force be with you
